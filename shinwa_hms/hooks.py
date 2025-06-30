@@ -143,23 +143,13 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"shinwa_hms.tasks.all"
-# 	],
-# 	"daily": [
-# 		"shinwa_hms.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"shinwa_hms.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"shinwa_hms.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"shinwa_hms.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+    "daily": [
+        "shinwa_hms.scheduled_tasks.auto_create_student_invoices",
+        "shinwa_hms.scheduled_tasks.notify_upcoming_rent_payments",
+        "shinwa_hms.scheduled_tasks.mark_overdue_invoices"
+    ]
+}
 
 # Testing
 # -------
@@ -176,9 +166,9 @@ app_license = "mit"
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
-# override_doctype_dashboards = {
-# 	"Task": "shinwa_hms.task.get_dashboard_data"
-# }
+override_doctype_dashboards = {
+    "Student": "shinwa_hms.shinwa_hms.config.student_dashboard.get_data"
+}
 
 # exempt linked doctypes from being automatically cancelled
 #

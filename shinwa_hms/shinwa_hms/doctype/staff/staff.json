@@ -1,0 +1,259 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:STF-{full_name}-{####}",
+ "creation": "2025-06-18 23:54:30.911066",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_information_tab",
+  "person_image_section",
+  "photo",
+  "general_information_section",
+  "full_name",
+  "address",
+  "email",
+  "contact_number",
+  "column_break_vpqp",
+  "branch",
+  "date_of_joining",
+  "position",
+  "status",
+  "emergency_contacts_details_section",
+  "emergency_contact_name",
+  "emergency_contact_address",
+  "column_break_xker",
+  "emergency_contact_number",
+  "relationship",
+  "documents_tab",
+  "documents",
+  "attendance_tab",
+  "attendance",
+  "tab_4_tab",
+  "salary_payment_details_section",
+  "salary",
+  "column_break_vrjs",
+  "bank_name",
+  "column_break_ijhk",
+  "bank_account_number",
+  "section_break_gcia",
+  "salary_slips",
+  "performance_reviews_tab",
+  "branch_assignment_history_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nOn Leave\nResigned"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "column_break_vpqp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "general_information_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "attendance_tab",
+   "fieldtype": "Tab Break",
+   "label": "Attendance"
+  },
+  {
+   "fieldname": "tab_4_tab",
+   "fieldtype": "Tab Break",
+   "label": "Salary/Payroll"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "performance_reviews_tab",
+   "fieldtype": "Tab Break",
+   "label": "Performance Reviews"
+  },
+  {
+   "fieldname": "branch_assignment_history_tab",
+   "fieldtype": "Tab Break",
+   "label": "Branch Assignment History"
+  },
+  {
+   "fieldname": "general_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "General Information"
+  },
+  {
+   "fieldname": "attendance",
+   "fieldtype": "Table",
+   "label": "Attendance",
+   "options": "Staff Attendance"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "emergency_contacts_details_section",
+   "fieldtype": "Section Break",
+   "label": "Emergency Contacts Details"
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Name"
+  },
+  {
+   "fieldname": "emergency_contact_number",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Number"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Data",
+   "label": "Relationship"
+  },
+  {
+   "fieldname": "person_image_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "emergency_contact_address",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Address"
+  },
+  {
+   "fieldname": "column_break_xker",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Table",
+   "label": "Documents",
+   "options": "Staff Documents"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Currency",
+   "label": "Monthly Salary",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "bank_account_number",
+   "fieldtype": "Data",
+   "label": "Bank Account Number"
+  },
+  {
+   "fieldname": "section_break_gcia",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vrjs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ijhk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salary_payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Salary Payment Details"
+  },
+  {
+   "fieldname": "salary_slips",
+   "fieldtype": "Table",
+   "label": "Payment History",
+   "options": "Staff Salary Slip"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-24 14:10:42.517289",
+ "modified_by": "Administrator",
+ "module": "Shinwa Hms",
+ "name": "Staff",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Hostel Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
